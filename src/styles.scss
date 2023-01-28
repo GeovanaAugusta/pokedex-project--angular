@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@use './config-scss/variables.scss';
+
+@use './config-scss/reset.scss';
+
+@use './config-scss/rem-calc.scss';
+
+html {
+  font-family: 'Roboto', sans-serif;
+  background: var(--primary-color);
+}
+
+main {
+  width: rem-calc(600px);
+  margin: auto;
+  // Tendo pading, o elemento é "jogado" pra dentro
+  box-sizing: border-box;
+}
