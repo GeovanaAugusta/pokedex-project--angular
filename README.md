@@ -11,4 +11,4 @@ A aplicação será automaticamente atualizada caso atualize algum arquivo.
 
 ## Code scaffolding
 
-Rode `ng generate component nome-do-componente` para gerar um novo componente. Pode usar também para gerar outro itens, basta usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Rode `ng generate component nome-do-componente` para gerar um novo componente. Há a possibilidade também de se usar para gerar outro itens, basta usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
