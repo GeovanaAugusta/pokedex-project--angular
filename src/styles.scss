@@ -5,6 +5,8 @@
 
 @use './config-scss/reset.scss';
 
+@use './config-scss/btn.scss';
+
 // Embora agora se utilize apenas o @use, nesse caso de passar função, somente com o import funciona
 // // Ao invés de importar a função aqui que é um método obsoleto, usar a cal(), se mostra muito melhor
 // @import './config-scss/rem-calc.scss';

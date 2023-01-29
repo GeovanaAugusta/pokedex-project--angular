@@ -1,0 +1,125 @@
+:host {
+	main {
+		margin-top: calc(40rem/16);
+
+		.pokemon__names {
+			position: relative;
+			display: flex;
+			align-items: flex-end;
+			justify-content: flex-end;
+
+			height: 75px;
+
+			padding: 0 calc(30rem/16);
+
+			h1 {
+				color: var(--branco);
+				font-size: calc(32rem/16);
+				text-transform: capitalize;
+			}
+
+			h2 {
+				position: absolute;
+				font-weight: 100;
+				top: 0;
+				font-size: calc(60rem/16);
+				color: rgba(255, 255, 255, 0.1);
+			}
+			h2 {
+				//Remove Bug Animation
+				-webkit-animation-fill-mode: none !important;
+				animation-fill-mode: none !important;
+			}
+		}
+
+		.pokemon__status {
+			position: relative;
+
+			img {
+				position: absolute;
+				top: calc(-90rem/16);
+				left: calc(30rem/16);
+				max-width: calc(130rem/16);
+				z-index: 10;
+
+				//Remove Bug Animation
+				-webkit-animation-fill-mode: none !important;
+				animation-fill-mode: none !important;
+			}
+
+			&__statistics {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+
+				background: var(--branco);
+
+				min-height: 43.9vh;
+				margin-top: calc(10rem/16);
+
+				padding: calc(110rem/16) calc(35rem/16) calc(30rem/16);
+				border-radius: calc(50) calc(50) 0 0;
+
+				h3 {
+					margin-bottom: calc(20rem/16);
+					font-weight: 700;
+					font-style: italic;
+					font-size: calc(32);
+					text-decoration: underline;
+					color: var(--secondary-color);
+				}
+
+				ol {
+					li {
+						display: flex;
+						justify-content: space-between;
+
+						font-size: calc(18rem/16);
+						line-height: 130%;
+					}
+				}
+			}
+		}
+
+		@media (max-width: 420px) {
+			margin-top: calc(10rem/16);
+
+			.pokemon__names {
+				h1 {
+					font-size: calc(20rem/16);
+				}
+
+				h2 {
+					top: calc(35rem/16);
+					font-size: calc(20rem/16);
+				}
+			}
+
+			.pokemon__status {
+				position: relative;
+
+				img {
+					position: absolute;
+					top: calc(-80rem/16);
+					left: calc(0rem/16);
+					max-width: calc(100rem/16);
+				}
+
+				&__statistics {
+					min-height: 57vh;
+          margin-top: 100px;
+					padding-top: calc(50rem/16);
+				}
+			}
+		}
+
+  .pokemon__status__statistics {
+    section {
+      margin-bottom: 2rem;
+      h3 {
+        font-size: 2rem;
+      }
+    }
+  }
+	}
+}
