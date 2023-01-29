@@ -6,15 +6,16 @@
 @use './config-scss/reset.scss';
 
 // Embora agora se utilize apenas o @use, nesse caso de passar função, somente com o import funciona
-@import './config-scss/rem-calc.scss';
+// // Ao invés de importar a função aqui que é um método obsoleto, usar a cal(), se mostra muito melhor
+// @import './config-scss/rem-calc.scss';
 
 html {
   font-family: 'Roboto', sans-serif;
   background: var(--primary-color);
 }
 
-.main {
-  width: rem-calc(600);
+main {
+  width: calc(600rem/16);
   margin: 0 auto;
   // Tendo pading, o elemento é "jogado" pra dentro
   box-sizing: border-box;

@@ -5,6 +5,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { PagesModule } from './pages/pages.module';
 
+// Para usar a API de pokémons, primeiro passo é importar aqui no AppModule o http
+import { HttpClientModule } from '@angular/common/http'
+
 // Components
 import { AppComponent } from './app.component';
 
@@ -15,7 +18,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PagesModule
+    PagesModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

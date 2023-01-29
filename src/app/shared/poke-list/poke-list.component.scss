@@ -1,6 +1,7 @@
-@import '../../../config-scss/rem-calc.scss';
+// @import '../../../config-scss/rem-calc.scss';
+// Ao invés de importar a função aqui que é um método obsoleto, usar a cal(), se mostra muito melhor
 
-$padding: rem-calc(20);
+$padding: calc(20rem/16);
 
 :host {
   display: flex;
@@ -15,24 +16,24 @@ $padding: rem-calc(20);
 			background: var(--branco);
 
 			width: calc(49% - 2.5rem);
-			height: rem-calc(157 - 40);
+			height: calc(117rem/16);
 
-			margin-bottom: rem-calc(10);
+			margin-bottom: calc(10rem/16);
 			padding: $padding;
 
-			border-radius: rem-calc(10);
+			border-radius: calc(10rem/16);
 
 			text-decoration: none;
 			color: var(--primary-color);
 
 			&__status {
 				h2 {
-					font-size: rem-calc(22);
+					font-size: calc(22rem/16);
 					font-style: italic;
 					font-weight: 700;
 					text-transform: capitalize;
 
-					margin-bottom: rem-calc(10);
+					margin-bottom: calc(10rem/16);
 				}
 
 				ul {
@@ -41,16 +42,16 @@ $padding: rem-calc(20);
 
 					li {
 						background: var(--cinza);
-						font-size: rem-calc(10);
+						font-size: calc(10rem/16);
 
 						display: flex;
 						justify-content: center;
 						align-items: center;
 
-						border-radius: rem-calc(50);
+						border-radius: calc(50rem/16);
 
-						width: rem-calc(60);
-						margin-bottom: rem-calc(5);
+						width: calc(60rem/16);
+						margin-bottom: calc(5rem/16);
 					}
 				}
 			}
@@ -62,8 +63,8 @@ $padding: rem-calc(20);
 				align-items: center;
 				justify-content: center;
 
-				height: rem-calc(90);
-				width: rem-calc(110);
+				height: calc(90rem/16);
+				width: calc(110rem/16);
 
 				right: $padding;
 				bottom: $padding;
@@ -71,7 +72,7 @@ $padding: rem-calc(20);
 				background: url('../../../assets/bg/background-list-pokemons.svg') no-repeat;
 
 				img {
-					width: rem-calc(60);
+					width: calc(60rem/16);
 				}
 			}
 		}

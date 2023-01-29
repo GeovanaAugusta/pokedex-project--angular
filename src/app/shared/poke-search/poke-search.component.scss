@@ -1,22 +1,22 @@
-
+// Ao invés de importar a função aqui que é um método obsoleto, usar a cal(), se mostra muito melhor
 // Embora agora se utilize apenas o @use, nesse caso de passar função, somente com o import funciona
-@import '../../../config-scss/rem-calc.scss';
+// @import '../../../config-scss/rem-calc.scss';
 
 :host {
   form {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: rem-calc(15) rem-calc(20);
+    padding: (15rem/16) (20rem/16);
     background-color: rgba(255, 255, 255, 0.2);
 
-    border-radius: rem-calc(10);
+    border-radius: calc(10rem/16);
 
     input {
       width: 95%;
       background: none;
       border: none;
-      font-size: rem-calc(18);
+      font-size: calc(18rem/16);
       color: var(--branco);
 
       &::placeholder {
