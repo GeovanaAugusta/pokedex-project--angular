@@ -16,13 +16,17 @@ export class PokeAPIService {
   public get apiListAllPokemons() : Observable<any> {
     // O pipe age como um filtro no http
     return this.http.get<any>(this.url).pipe(
-      // O tap faz uma outra requisição
+      // O tap faz uma outra requisição por exemplo, passa a resposta e dá sequência para o próximo passo a ser executado
       tap(res => res),
       tap(res => {
-        console.log(res);
+        res.results.map((resPokemons: any) => {
 
+          this.http.get<any>(resPokemons.url).subscribe(
+            res => resPokemons.status = res
+          );
+
+        })
       })
-    );
+    )
   }
-
 }

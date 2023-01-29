@@ -13,7 +13,7 @@ export class PokeListComponent implements OnInit {
   ngOnInit(): void {
     // Para inicializar o get, é necessário instanciar
     this.pokeAPIService.apiListAllPokemons.subscribe(
-      res => res
+      res => console.log(res)
     );
   }
 }
