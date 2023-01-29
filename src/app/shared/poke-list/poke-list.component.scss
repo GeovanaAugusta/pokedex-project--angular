@@ -44,7 +44,7 @@ $padding: calc(20rem/16);
 
 					li {
 						background: var(--cinza);
-						font-size: calc(10rem/16);
+						font-size: calc(12rem/16);
 
 						display: flex;
 						justify-content: center;
@@ -53,7 +53,8 @@ $padding: calc(20rem/16);
 						border-radius: calc(50rem/16);
 
 						width: calc(60rem/16);
-						margin-bottom: calc(5rem/16);
+            margin-top: calc(7rem/16);
+						margin-bottom: calc(7rem/16);
 					}
 				}
 			}
