@@ -10,6 +10,7 @@ import { PokeAPIService } from 'src/app/service/poke-api.service'
 export class PokeListComponent implements OnInit {
 
   public getAllPokemons: PokemonResultI[] = [];
+  private setAllPokemons: PokemonResultI[] = [];
 
   constructor(private pokeAPIService: PokeAPIService) {}
 
@@ -17,9 +18,19 @@ export class PokeListComponent implements OnInit {
     // Para inicializar o get, é necessário instanciar
     this.pokeAPIService.apiListAllPokemons.subscribe(
       res => {
-        this.getAllPokemons = res.results;
+        this.setAllPokemons = res.results;
+        this.getAllPokemons = this.setAllPokemons
       console.log(this.getAllPokemons)
       }
     );
+  }
+
+  public getSearch(search: string) {
+    console.log(search);
+    const filteredPokemon = this.setAllPokemons.filter((infosPokemon) => {
+      return !infosPokemon.name.indexOf(search.toLowerCase());
+    })
+    // Aqui é a forma ideal do filtro apagar e ser reatribuído com os valores digitados/apagados
+    this.getAllPokemons = filteredPokemon;
   }
 }
