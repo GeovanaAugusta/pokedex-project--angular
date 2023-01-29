@@ -39,7 +39,7 @@ export class DetailsComponent implements OnInit {
         this.pokemon = res;
         // Verificação se carregou ou não
         this.isLoading = true;
-        console.log(res);
+        // console.log(res);
       },
       error => {
         this.apiError = true;
