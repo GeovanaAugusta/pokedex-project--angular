@@ -3,7 +3,8 @@
 
 $padding: calc(20rem/16);
 
-:host {
+:host{
+.listagem {
   display: flex;
   justify-content: space-between;
 	width: 100%;
@@ -84,4 +85,5 @@ $padding: calc(20rem/16);
 			}
 		}
 	}
+}
 

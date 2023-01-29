@@ -1,4 +1,5 @@
 <form>
-  <input type="text" placeholder="Buscar Pokemon...">
+  <!-- Nomeclantura para pegar as propriedades do input e preciso exatamente do value, que será o digitado -->
+  <input #input (keyup)="search(input.value)" type="text" placeholder="Buscar Pokemon...">
   <img src="assets/icons/search.svg" alt="Buscar Pokemon">
 </form>
