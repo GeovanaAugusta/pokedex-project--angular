@@ -1,5 +1,3 @@
-import { any, string, types } from "joi"
-
 export interface PokemonI {
 
     name: string,
@@ -20,6 +18,7 @@ export interface PokemonResultI {
 
 }
 
+// Como a API retorna um n signficativo de dados, alguns deles ainda estão tipados como any
 export interface PokemonDetailsI
   {
     abilities: any,
