@@ -23,6 +23,7 @@ export interface PokemonResultI {
 export interface PokemonDetailsI
   {
     abilities: any,
+    names: any,
     base_experience: number,
     forms: any,
     game_indices: any,

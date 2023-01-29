@@ -37,6 +37,7 @@ export class DetailsComponent implements OnInit {
    return combineLatest([pokemon, name]).subscribe(
       res => {
         this.pokemon = res;
+        // Verificação se carregou ou não
         this.isLoading = true;
         console.log(res);
       },
@@ -47,3 +48,4 @@ export class DetailsComponent implements OnInit {
   }
 
 }
+
