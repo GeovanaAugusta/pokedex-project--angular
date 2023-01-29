@@ -7,6 +7,7 @@ $padding: calc(20rem/16);
   display: flex;
   justify-content: space-between;
 	width: 100%;
+  flex-wrap: wrap;
 
 		padding: $padding 0;
 
@@ -69,7 +70,7 @@ $padding: calc(20rem/16);
 				right: $padding;
 				bottom: $padding;
 
-				background: url('../../../assets/bg/background-list-pokemons.svg') no-repeat;
+				// background: url('../../../assets/bg/background-list-pokemons.svg') no-repeat;
 
 				img {
 					width: calc(60rem/16);

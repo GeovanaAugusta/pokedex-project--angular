@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
+import { PokemonI, PokemonResultI } from '../pages/interface';
 
 @Injectable({
   providedIn: 'root'
@@ -13,15 +14,15 @@ export class PokeAPIService {
   constructor(private http: HttpClient) { }
 
 
-  public get apiListAllPokemons() : Observable<any> {
+  public get apiListAllPokemons() : Observable<PokemonResultI> {
     // O pipe age como um filtro no http
-    return this.http.get<any>(this.url).pipe(
+    return this.http.get<PokemonResultI>(this.url).pipe(
       // O tap faz uma outra requisição por exemplo, passa a resposta e dá sequência para o próximo passo a ser executado
       tap(res => res),
       tap(res => {
-        res.results.map((resPokemons: any) => {
-
-          this.http.get<any>(resPokemons.url).subscribe(
+        res.results.map((resPokemons: PokemonResultI) => {
+          // A API pura passa apenas o name e url, a partir dessa url é que consigo ver os seus detalhes, seus status
+          this.http.get<PokemonI>(resPokemons.url).subscribe(
             res => resPokemons.status = res
           );
 
