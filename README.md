@@ -1,17 +1,20 @@
 # Pokedex API Project
 
-O projeto foi gerado utilizando [Angular CLI](https://github.com/angular/angular-cli) versão 15.1.1.
+Neste projeto foi feito uma aplicação que renderiza os cards de 100 pokémons utilizando [Angular CLI](https://github.com/angular/angular-cli) versão 15.1.1, sendo possível verificar as características e estatísticas de cada um deles. Além disso, possui também um filtro, podendo assim fazer o uso da barra de busca para agilizar sua pesquisa por um Pokémon específico. Aqui foram praticados os principais conceitos e a base em si do Angular.
 
-É um projeto onde foi feito o card de 100 pokémons, sendo possível verificar as características e estatísticas de cada um deles. Além disso, possui também um filtro, podendo assim fazer o uso da barra de busca para agilizar sua pesquisa por um Pokémon específico. Aqui foram praticados os principais conceitos e a base em si do Angular.
+## Rodando localmente
 
-## Servidor de Desenvolvimento
+- Instale as dependências e inicie a aplicação que rodará na porta 4200:
 
-Para iniciar a aplicação localmente, rode `ng serve` e navegue para `http://localhost:4200/`. A aplicação será automaticamente atualizada caso atualize algum arquivo.
+``` bash
+npm install
+ng serve
+```
 
-Se preferir, acesse e aproveite aqui a <a href="https://pokedex-project-angular.vercel.app" target="_blank">Pokedex</a>.
+- A aplicação será automaticamente atualizada caso atualize algum arquivo.
 
+- Entre no http://localhost:4200/ e faça seu login:
 
+## Rodando pelo Vercel
 
-## Estrutura de código
-
-Rode `ng generate component nome-do-componente` para gerar um novo componente. Há a possibilidade também de se usar para gerar outro itens, basta usar o ng generate juntamente do que deseja gerar: `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Se preferir, acesse a Pokedex <a href="https://pokedex-project-angular.vercel.app" target="_blank">aqui</a>.
