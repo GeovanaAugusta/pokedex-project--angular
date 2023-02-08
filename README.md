@@ -8,7 +8,7 @@ O projeto foi gerado utilizando [Angular CLI](https://github.com/angular/angular
 
 Para iniciar a aplicação localmente, rode `ng serve` e navegue para `http://localhost:4200/`. A aplicação será automaticamente atualizada caso atualize algum arquivo.
 
-Se preferir, acesse `https://pokedex-project-angular.vercel.app/` e aproveite a Pokedex.
+Se preferir, acesse <https://pokedex-project-angular.vercel.app/>  e aproveite a Pokedex.
 
 
 
