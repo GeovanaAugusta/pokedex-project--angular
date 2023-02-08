@@ -1,4 +1,4 @@
-# Pokedex API Project
+# Pokedex 
 
 Neste projeto foi feito uma aplicação que renderiza os cards de 100 pokémons utilizando [Angular CLI](https://github.com/angular/angular-cli) versão 15.1.1, sendo possível verificar as características e estatísticas de cada um deles. Além disso, possui também um filtro, podendo assim fazer o uso da barra de busca para agilizar sua pesquisa por um Pokémon específico. Aqui foram praticados os principais conceitos e a base em si do Angular.
 
