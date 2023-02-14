@@ -33,8 +33,6 @@ ng serve
 
 - A aplicação será automaticamente atualizada caso atualize algum arquivo.
 
-- Entre no http://localhost:4200/ e faça seu login:
-
 ## Rodando pelo Vercel
 
 - Se preferir, acesse a Pokedex <a href="https://pokedex-project-angular.vercel.app" target="_blank">aqui</a>.
